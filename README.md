@@ -15,4 +15,6 @@ This algo takes in 3 paramaters to calculate the shortest path :
 
 These parameters are then updated to an open set and and later onthey are popped from the set and they smallest route is decided.
 
+Everything else is described step by step in the .py file included. :)
+
 ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
