@@ -6,7 +6,7 @@ import time
 import random
 
 
-from pygame.constants import KEYDOWN, K_LSHIFT, K_SPACE,K_RSHIFT       
+from pygame.constants import K_0, KEYDOWN, K_LSHIFT, K_SPACE,K_RSHIFT       
 
 pygame.init()
 #----------------------------#        #------- setting up display -------- #
@@ -294,9 +294,6 @@ def main(win,width):
                 elif spot == end:
                     end = None
 
-            
-
-
             if event.type == pygame.KEYDOWN:
                 if event.key == K_SPACE and not started:
                     for row in grid:
@@ -327,8 +324,31 @@ def main(win,width):
                         spot = grid[aa][bb]
                         if spot != start and spot != end:
                             spot.make_is_barrier()
-    
-    
+                
+                if event.key == K_0:
+                    message2('clsoing bounds')
+                    time.sleep(.8)
+
+                    bounds_list = []
+
+                    for i in range(50):
+                        bounds_list.append((0,i))
+                        bounds_list.append((i,0))
+                        bounds_list.append((49,i))
+                        bounds_list.append((i,49))
+
+
+                    for i in range(len(bounds_list)):
+                        aa = bounds_list[i][0]   
+                        bb = bounds_list[i][1]
+
+                        print(aa,bb)
+                        spot = grid[aa][bb]
+                        if spot != start and spot != end:
+                            spot.make_is_barrier()
+
+
+
     pygame.quit()
     
     
