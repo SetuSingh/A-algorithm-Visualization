@@ -3,18 +3,17 @@ A python project to visualize how A* algorithm works for pathfinding work case. 
 
 ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
 
-A* (A star) algorithm is a shortest path finding algorithm that is used on daily basis in applications such as maps and also in games where there are many obstructions between the start and end point.
+The A* (A star) algorithm is widely used in various applications, including maps and games, to find the shortest path between a start and end point, even when obstacles are present.
 
-This project is built using python3 and PyGame library. The canvas is divided into a large grid made up of small boxes(cubes) which can be used as starting point,end point or obstruction.
+This particular project is implemented in Python3 using the PyGame library. The canvas is represented as a grid composed of small boxes or cubes, which can serve as the starting point, end point, or obstructions.
 
-This algo takes in 3 paramaters to calculate the shortest path :
- 1) F score  : It is sum of g score and f score.
- 2) G score  : Movement cost of moving from STARTING point to to a GIVEN Box(cube) on Grid.
- 3) H score  : Estimate movement cost of moving form GIVEN box(cube) on grid to Final(end) point on grid. It is refered as heuristic as it is nothing but an apporximate "smart" guess without considering any obstrutctions or whatsoever.
+To calculate the shortest path, the algorithm considers three parameters:
 
+F score: This is the sum of the G score and H score.
+The G score represents the movement cost from the starting point to a specific box on the grid. 
+The H score is an estimate of the movement cost from a given box to the final (end) point on the grid. The H score is referred to as a heuristic because it provides an approximate "smart" guess without considering any obstructions.
 
-These parameters are then updated to an open set and and later onthey are popped from the set and they smallest route is decided.
+These parameters are updated in an open set, and the algorithm continues until the set is empty. At each step, the algorithm selects the smallest route by popping the parameters from the set.
 
-Everything else is described step by step in the .py file included. :)
-
+Further details and implementation steps can be found in the included .py file, providing a comprehensive guide to understanding and implementing the A* algorithm in the context of grid-based pathfinding using Python and PyGame.
 ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
